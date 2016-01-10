@@ -1,0 +1,26 @@
+{
+  "name": "automatic-car",
+  "version": "1.0.0",
+  "description": "",
+  "main": "app.js",
+  "directories": {
+    "test": "tests"
+  },
+  "dependencies": {
+    "mcsjs": "^0.0.3"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/CapsLock-Studio/automatic-car.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/CapsLock-Studio/automatic-car/issues"
+  },
+  "homepage": "https://github.com/CapsLock-Studio/automatic-car#readme"
+}
