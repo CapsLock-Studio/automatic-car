@@ -7,7 +7,7 @@ module.exports = {
     down: function () {
         // TODO: impl here
     },
-    brake = function() {
+    stop = function() {
         config.set('direction', 0);
         config.set('speed', 0);
     }

@@ -1,9 +1,9 @@
 var mraa = require('mraa');
 
-x = mraa.Pwm(10)
+var x = mraa.Pwm(10)
 x.period_us(700)
 x.enable(true)
-value= 0.0
+var value= 0.0
 
 function run() {
     x.write(value)

@@ -1,10 +1,10 @@
-var config = require('./config.js');
+var config = require('./application/config.js');
 config.initialize();
 
 var mcs = require('mcsjs');
-var direction = require('./direction.js');
-var speed = require('./speed.js');
-var motor = require('./motor.js')();
+var direction = require('./application/direction.js');
+var speed = require('./application/speed.js');
+var motor = require('./application/motor.js')();
 
 
 var app = mcs.register({
@@ -14,8 +14,7 @@ var app = mcs.register({
 
 function refresh() {
 	motor.handle();
-	speed.down();
-	setTimeout(refresh, 500);
+	setTimeout(refresh, 50);
 }
 
 app.on('gamepad', function(data, time) {
@@ -37,7 +36,7 @@ app.on('gamepad', function(data, time) {
 				direction.left();
 				break;
 			case 'a':
-				speed.brake();
+				speed.stop();
 				break;
 			case 'b':
 				break;

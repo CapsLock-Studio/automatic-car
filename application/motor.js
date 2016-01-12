@@ -19,6 +19,7 @@ var handle = function () {
     update = new Date(update);
     var date = new Date();
 
+    // NOTE: no action for 1sec, initialize all setting.
     if ((date - update) / 1000 > 1) {
         config.initialize();
     }
